@@ -82,3 +82,57 @@ body {
     /*mesma coisa que:
     flex: 1 1 125px;*/
 }
+
+.item-3 {
+    align-self: flex-end;
+}
+
+.item-1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+}
+
+.acoes {
+    margin-top: 32px;
+
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 16px;
+    flex-wrap: wrap;
+}
+
+.botao {
+    padding: 16px 26px;
+    border-radius: 80px;
+    border: 4px solid grey;
+    background-color: #eef2ff;
+    font-size: large;
+    font-weight: 700;
+    transition: background-color 0.5s ease;
+
+    flex-shrink: 1;
+
+    
+}
+
+.cancelar {
+    background-color: #ff9090;
+    border-color: #ff0000;
+}
+
+.salvar {
+    background-color: #a1ff89;
+    border-color: #2bff00
+}
+
+.publicar {
+    background-color: #e788ff;
+    border-color: #890096;
+}
+
+.botao:hover {
+    background-color: #eef2ff;
+}
