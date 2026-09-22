@@ -58,13 +58,14 @@ body {
 
     display: flex;
     flex-direction: row;
-    justify-content: center;
-    align-items: center;
+    justify-content: center; /*eixo principal*/
+    align-items: center; /*eixo transversal*/
     gap: 16px; /*pra separar elementos de um conteiner flexbox, gap é melhor que margin*/
+    flex-wrap: wrap; /*os itens podem ser distribuídos em novas linhas quando não existe espaço suficiente.*/
 }
 
 .item {
-    width: 100px;
+    /* width: 100px; */
     min-height: 80px;
     padding: 24px;
     text-align: center;
@@ -73,4 +74,11 @@ body {
     border-radius: 8px;
     font-size: 24px;
     font-weight: 700;
+
+    flex-grow: 1; /*capacidade de crescer: os itens crescem para utilizar todo o espaço disponível da box (atua só no eixo principal, caso haja eixo principal)*/
+    flex-shrink: 1; /*capacidade de diminuir*/
+    flex-basis: 150px; /*define o tamanho inicial considerado para o flex item no eixo principal*/
+
+    /*mesma coisa que:
+    flex: 1 1 125px;*/
 }
